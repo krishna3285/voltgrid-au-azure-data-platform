@@ -1,0 +1,34 @@
+# Secrets and local Azure configuration - never commit these
+.env
+.env.*
+*.secret
+*.pem
+*.pfx
+*.key
+
+# Azure / Databricks local configuration
+.azure/
+.databricks/
+**/local.settings.json
+**/appsettings.Development.json
+
+# Python / editor generated files
+__pycache__/
+*.py[cod]
+.venv/
+.vscode/
+.idea/
+
+# Generated data, checkpoints, and logs
+output/
+logs/
+checkpoints/
+*.log
+
+# Power BI local files
+*.pbix
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
